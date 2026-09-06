@@ -1,0 +1,23 @@
+# Local package-manager artifacts
+node_modules/
+.pnpm/
+.pnpm-store/
+.pnpm-*
+pnpm-debug.log*
+
+# Tests and visual baselines
+tests/
+test-results/
+**/visual.spec.ts-snapshots/
+
+# Playwright artifacts and configuration
+playwright.config.*
+playwright-report/
+blob-report/
+.playwright/
+
+# Debug logs
+debug.log
+*.debug.log
+
+dist/

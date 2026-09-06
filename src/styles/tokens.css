@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Zalando Sans Expanded';
+    src: url('../assets/fonts/ZalandoSansExpanded-Variable.ttf')
+        format('truetype');
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Variable.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Italic-Variable.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+:root {
+    color-scheme: dark;
+    --color-bg: #0d0d0d;
+    --color-surface: #171719;
+    --color-surface-soft: #1d1b22;
+    --color-text: #ffffff;
+    --color-muted: #a8a8ad;
+    --color-pink: #fe008e;
+    --color-pink-soft: #e21c7f;
+    --color-purple: #a229bd;
+    --color-blue: #2063ff;
+    --gradient-brand: linear-gradient(
+        90deg,
+        var(--color-pink),
+        var(--color-blue)
+    );
+    --content-width: 1264px;
+    --content-pad: clamp(20px, 4vw, 48px);
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-pill: 999px;
+    --font-display: 'Zalando Sans Expanded', 'Arial Black', sans-serif;
+    --font-ui:
+        'SF Pro', 'SF Pro Text', 'SF Pro Display', -apple-system,
+        BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif;
+    --shadow-glow: 0 0 30px rgb(254 0 142 / 0.22);
+    --transition: 180ms ease;
+}
