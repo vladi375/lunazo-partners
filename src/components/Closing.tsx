@@ -1,4 +1,5 @@
-import { affiliateRegistrationUrl } from '../data/content';
+import brandLogo from '../assets/brand/Layer_1.png';
+import { URL } from '../data/content';
 
 export default function Closing() {
     return (
@@ -13,7 +14,7 @@ export default function Closing() {
                 </p>
                 <a
                     className='button button-primary'
-                    href={affiliateRegistrationUrl}
+                    href={URL.AFFILIATE_REGISTRATION}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
@@ -22,12 +23,23 @@ export default function Closing() {
             </section>
             <footer className='footer section-shell'>
                 <span className='brand'>
-                    <span>LUNAZO</span>
-                    <span>PARTNERS</span>
+                    <img src={brandLogo} alt='Lunazo Partners' />
                 </span>
                 <nav aria-label='Legal'>
-                    <a href='#terms'>Terms</a>
-                    <a href='#privacy'>Privacy</a>
+                    <a
+                        href={URL.TERMS}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Terms
+                    </a>
+                    <a
+                        href={URL.PRIVACY}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Privacy
+                    </a>
                     <span>18+</span>
                     <a href='mailto:partners@lunazo.bet'>partners@lunazo.bet</a>
                 </nav>

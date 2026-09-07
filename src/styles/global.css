@@ -55,21 +55,15 @@ body.menu-open {
 
 .brand {
     display: inline-flex;
-    width: max-content;
-    flex-direction: column;
-    color: var(--color-pink);
-    font-size: 22px;
-    font-weight: 950;
-    font-style: italic;
-    line-height: 0.72;
-    letter-spacing: -1px;
+    width: 142px;
+    flex: 0 0 auto;
     text-decoration: none;
-    font-family: var(--font-display);
 }
 
-.brand span:last-child {
-    font-size: 14px;
-    letter-spacing: -0.5px;
+.brand img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .desktop-nav {
@@ -576,7 +570,7 @@ body.menu-open {
 .lunar .note-pill {
     margin-top: 35px;
     color: rgb(255 255 255 / 0.7);
-    border-color: #28282d;
+    border-color: #696969;
     font-size: 18px;
     font-style: italic;
     font-weight: 276;
@@ -742,7 +736,7 @@ body.menu-open {
 }
 .markets .note-pill {
     color: #8e8d94;
-    border-color: #2b2b30;
+    border-color: #696969;
     font-style: italic;
 }
 .map-art {
@@ -937,6 +931,8 @@ body.menu-open {
     animation: faq-panel-close 520ms ease-in-out both;
 }
 .faq-panel-inner {
+    width: 75%;
+    white-space: pre-line;
     min-height: 0;
     overflow: hidden;
 }
@@ -1108,10 +1104,7 @@ body.menu-open {
         display: none;
     }
     .brand {
-        font-size: 18px;
-    }
-    .brand span:last-child {
-        font-size: 11px;
+        width: 110px;
     }
     .menu-trigger {
         width: 42px;

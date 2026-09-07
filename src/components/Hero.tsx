@@ -1,4 +1,4 @@
-import { affiliateRegistrationUrl } from '../data/content';
+import { URL } from '../data/content';
 
 export default function Hero() {
     return (
@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className='hero-actions'>
                     <a
                         className='button button-primary'
-                        href={affiliateRegistrationUrl}
+                        href={URL.AFFILIATE_REGISTRATION}
                         target='_blank'
                         rel='noopener noreferrer'
                     >

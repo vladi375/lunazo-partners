@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import {
-    affiliateLoginUrl,
-    affiliateRegistrationUrl,
-    navItems,
-} from '../data/content';
+import brandLogo from '../assets/brand/Layer_1.png';
+import { navItems, URL } from '../data/content';
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -39,8 +36,7 @@ export default function Header() {
                     href='#content'
                     aria-label='Lunazo Partners home'
                 >
-                    <span>LUNAZO</span>
-                    <span>PARTNERS</span>
+                    <img src={brandLogo} alt='Lunazo Partners' />
                 </a>
                 <nav className='desktop-nav' aria-label='Primary navigation'>
                     {navItems.map((item) => (
@@ -53,7 +49,7 @@ export default function Header() {
                 <div className='header-actions'>
                     <a
                         className='button button-secondary'
-                        href={affiliateLoginUrl}
+                        href={URL.AFFILIATE_LOGIN}
                         target='_blank'
                         rel='noopener noreferrer'
                     >
@@ -61,7 +57,7 @@ export default function Header() {
                     </a>
                     <a
                         className='button button-primary'
-                        href={affiliateRegistrationUrl}
+                        href={URL.AFFILIATE_REGISTRATION}
                         target='_blank'
                         rel='noopener noreferrer'
                     >
@@ -92,8 +88,7 @@ export default function Header() {
                 >
                     <div className='mobile-menu-top'>
                         <span className='brand'>
-                            <span>LUNAZO</span>
-                            <span>PARTNERS</span>
+                            <img src={brandLogo} alt='Lunazo Partners' />
                         </span>
                         <button
                             type='button'
@@ -118,7 +113,7 @@ export default function Header() {
                     <div className='mobile-menu-actions'>
                         <a
                             className='button button-primary'
-                            href={affiliateRegistrationUrl}
+                            href={URL.AFFILIATE_REGISTRATION}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
@@ -126,7 +121,7 @@ export default function Header() {
                         </a>
                         <a
                             className='button button-secondary'
-                            href={affiliateLoginUrl}
+                            href={URL.AFFILIATE_LOGIN}
                             target='_blank'
                             rel='noopener noreferrer'
                         >

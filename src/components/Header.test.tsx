@@ -19,6 +19,19 @@ describe('mobile navigation', () => {
         expect(trigger).toHaveFocus();
     });
 
+    it('reuses the exported logo inside the mobile menu', async () => {
+        const user = userEvent.setup();
+        render(<Header />);
+
+        await user.click(screen.getByRole('button', { name: /open menu/i }));
+        const logos = screen.getAllByRole('img', { name: 'Lunazo Partners' });
+        expect(logos).toHaveLength(2);
+        expect(logos[1]).toHaveAttribute(
+            'src',
+            expect.stringMatching(/Layer_1\.png$/),
+        );
+    });
+
     it('closes after selecting a section link', async () => {
         const user = userEvent.setup();
         render(<Header />);
