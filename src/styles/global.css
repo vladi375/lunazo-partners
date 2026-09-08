@@ -221,6 +221,10 @@ body.menu-open {
     position: absolute;
     inset: 0;
     background-image: url('../assets/hero/girl-palms.png');
+    background-image: image-set(
+        url('../assets/hero/girl-palms-desktop.webp') type('image/webp'),
+        url('../assets/hero/girl-palms.png') type('image/png')
+    );
     background-repeat: no-repeat;
     background-size: auto 820px;
     background-position: calc(100% - 20px) calc(50% + 2px);
@@ -742,57 +746,197 @@ body.menu-open {
 
 @media (min-width: 1101px) {
     @keyframes rates-cloud-pink-far {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(1.04, 0.96) rotate(-3deg); opacity: 0.78; }
-        17% { transform: translate3d(-30vw, 11vh, 0) scale(1.1, 0.92) rotate(1deg); opacity: 0.72; }
-        34% { transform: translate3d(-11.25vw, 22vh, 0) scale(0.97, 1.07) rotate(4deg); opacity: 0.8; }
-        51% { transform: translate3d(-42.5vw, 14vh, 0) scale(1.08, 0.95) rotate(-1deg); opacity: 0.74; }
-        68% { transform: translate3d(-21.25vw, 6vh, 0) scale(0.94, 1.1) rotate(-5deg); opacity: 0.77; }
-        84% { transform: translate3d(10vw, 9vh, 0) scale(1.06, 0.98) rotate(2deg); opacity: 0.73; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(1.04, 0.96) rotate(-3deg);
+            opacity: 0.78;
+        }
+        17% {
+            transform: translate3d(-30vw, 11vh, 0) scale(1.1, 0.92) rotate(1deg);
+            opacity: 0.72;
+        }
+        34% {
+            transform: translate3d(-11.25vw, 22vh, 0) scale(0.97, 1.07)
+                rotate(4deg);
+            opacity: 0.8;
+        }
+        51% {
+            transform: translate3d(-42.5vw, 14vh, 0) scale(1.08, 0.95)
+                rotate(-1deg);
+            opacity: 0.74;
+        }
+        68% {
+            transform: translate3d(-21.25vw, 6vh, 0) scale(0.94, 1.1)
+                rotate(-5deg);
+            opacity: 0.77;
+        }
+        84% {
+            transform: translate3d(10vw, 9vh, 0) scale(1.06, 0.98) rotate(2deg);
+            opacity: 0.73;
+        }
     }
 
     @keyframes rates-cloud-blue-far {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(0.98, 1.06) rotate(2deg); opacity: 0.8; }
-        17% { transform: translate3d(32.5vw, -12vh, 0) scale(1.07, 0.95) rotate(-2deg); opacity: 0.74; }
-        34% { transform: translate3d(12.5vw, -23vh, 0) scale(0.94, 1.1) rotate(-5deg); opacity: 0.81; }
-        51% { transform: translate3d(45vw, -15vh, 0) scale(1.09, 0.94) rotate(1deg); opacity: 0.76; }
-        68% { transform: translate3d(22.5vw, 14vh, 0) scale(0.96, 1.08) rotate(5deg); opacity: 0.79; }
-        84% { transform: translate3d(-11.25vw, -10vh, 0) scale(1.05, 0.97) rotate(-1deg); opacity: 0.75; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(0.98, 1.06) rotate(2deg);
+            opacity: 0.8;
+        }
+        17% {
+            transform: translate3d(32.5vw, -12vh, 0) scale(1.07, 0.95)
+                rotate(-2deg);
+            opacity: 0.74;
+        }
+        34% {
+            transform: translate3d(12.5vw, -23vh, 0) scale(0.94, 1.1)
+                rotate(-5deg);
+            opacity: 0.81;
+        }
+        51% {
+            transform: translate3d(45vw, -15vh, 0) scale(1.09, 0.94)
+                rotate(1deg);
+            opacity: 0.76;
+        }
+        68% {
+            transform: translate3d(22.5vw, 14vh, 0) scale(0.96, 1.08)
+                rotate(5deg);
+            opacity: 0.79;
+        }
+        84% {
+            transform: translate3d(-11.25vw, -10vh, 0) scale(1.05, 0.97)
+                rotate(-1deg);
+            opacity: 0.75;
+        }
     }
 
     @keyframes rates-cloud-pink-middle {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(1.02, 0.96) rotate(-4deg); opacity: 0.78; }
-        17% { transform: translate3d(-38.75vw, 15vh, 0) scale(1.12, 0.9) rotate(3deg); opacity: 0.72; }
-        34% { transform: translate3d(-20vw, 29vh, 0) scale(0.91, 1.14) rotate(7deg); opacity: 0.81; }
-        51% { transform: translate3d(-60vw, 18vh, 0) scale(1.13, 0.89) rotate(-2deg); opacity: 0.74; }
-        68% { transform: translate3d(-31.25vw, -19vh, 0) scale(0.9, 1.15) rotate(-8deg); opacity: 0.79; }
-        84% { transform: translate3d(15vw, 10vh, 0) scale(1.08, 0.95) rotate(2deg); opacity: 0.73; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(1.02, 0.96) rotate(-4deg);
+            opacity: 0.78;
+        }
+        17% {
+            transform: translate3d(-38.75vw, 15vh, 0) scale(1.12, 0.9)
+                rotate(3deg);
+            opacity: 0.72;
+        }
+        34% {
+            transform: translate3d(-20vw, 29vh, 0) scale(0.91, 1.14)
+                rotate(7deg);
+            opacity: 0.81;
+        }
+        51% {
+            transform: translate3d(-60vw, 18vh, 0) scale(1.13, 0.89)
+                rotate(-2deg);
+            opacity: 0.74;
+        }
+        68% {
+            transform: translate3d(-31.25vw, -19vh, 0) scale(0.9, 1.15)
+                rotate(-8deg);
+            opacity: 0.79;
+        }
+        84% {
+            transform: translate3d(15vw, 10vh, 0) scale(1.08, 0.95) rotate(2deg);
+            opacity: 0.73;
+        }
     }
 
     @keyframes rates-cloud-blue-middle {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(0.96, 1.04) rotate(3deg); opacity: 0.8; }
-        17% { transform: translate3d(41.25vw, -16vh, 0) scale(1.13, 0.89) rotate(-4deg); opacity: 0.73; }
-        34% { transform: translate3d(21.25vw, -31vh, 0) scale(0.9, 1.16) rotate(-7deg); opacity: 0.82; }
-        51% { transform: translate3d(62.5vw, -20vh, 0) scale(1.14, 0.9) rotate(2deg); opacity: 0.75; }
-        68% { transform: translate3d(32.5vw, 20vh, 0) scale(0.91, 1.13) rotate(8deg); opacity: 0.79; }
-        84% { transform: translate3d(-16.25vw, -11vh, 0) scale(1.07, 0.94) rotate(-2deg); opacity: 0.74; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(0.96, 1.04) rotate(3deg);
+            opacity: 0.8;
+        }
+        17% {
+            transform: translate3d(41.25vw, -16vh, 0) scale(1.13, 0.89)
+                rotate(-4deg);
+            opacity: 0.73;
+        }
+        34% {
+            transform: translate3d(21.25vw, -31vh, 0) scale(0.9, 1.16)
+                rotate(-7deg);
+            opacity: 0.82;
+        }
+        51% {
+            transform: translate3d(62.5vw, -20vh, 0) scale(1.14, 0.9)
+                rotate(2deg);
+            opacity: 0.75;
+        }
+        68% {
+            transform: translate3d(32.5vw, 20vh, 0) scale(0.91, 1.13)
+                rotate(8deg);
+            opacity: 0.79;
+        }
+        84% {
+            transform: translate3d(-16.25vw, -11vh, 0) scale(1.07, 0.94)
+                rotate(-2deg);
+            opacity: 0.74;
+        }
     }
 
     @keyframes rates-cloud-pink-near {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(1.05, 0.93) rotate(-6deg); opacity: 0.7; }
-        17% { transform: translate3d(-52.5vw, 21vh, 0) scale(1.18, 0.84) rotate(5deg); opacity: 0.62; }
-        34% { transform: translate3d(-27.5vw, 38vh, 0) scale(0.84, 1.2) rotate(10deg); opacity: 0.73; }
-        51% { transform: translate3d(-77.5vw, 25vh, 0) scale(1.2, 0.83) rotate(-4deg); opacity: 0.64; }
-        68% { transform: translate3d(-42.5vw, -27vh, 0) scale(0.83, 1.21) rotate(-11deg); opacity: 0.71; }
-        84% { transform: translate3d(20vw, 13vh, 0) scale(1.12, 0.9) rotate(3deg); opacity: 0.63; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(1.05, 0.93) rotate(-6deg);
+            opacity: 0.7;
+        }
+        17% {
+            transform: translate3d(-52.5vw, 21vh, 0) scale(1.18, 0.84)
+                rotate(5deg);
+            opacity: 0.62;
+        }
+        34% {
+            transform: translate3d(-27.5vw, 38vh, 0) scale(0.84, 1.2)
+                rotate(10deg);
+            opacity: 0.73;
+        }
+        51% {
+            transform: translate3d(-77.5vw, 25vh, 0) scale(1.2, 0.83)
+                rotate(-4deg);
+            opacity: 0.64;
+        }
+        68% {
+            transform: translate3d(-42.5vw, -27vh, 0) scale(0.83, 1.21)
+                rotate(-11deg);
+            opacity: 0.71;
+        }
+        84% {
+            transform: translate3d(20vw, 13vh, 0) scale(1.12, 0.9) rotate(3deg);
+            opacity: 0.63;
+        }
     }
 
     @keyframes rates-cloud-blue-near {
-        0%, 100% { transform: translate3d(0, 0, 0) scale(0.94, 1.06) rotate(5deg); opacity: 0.72; }
-        17% { transform: translate3d(55vw, -22vh, 0) scale(1.19, 0.84) rotate(-5deg); opacity: 0.64; }
-        34% { transform: translate3d(28.75vw, -40vh, 0) scale(0.82, 1.22) rotate(-10deg); opacity: 0.74; }
-        51% { transform: translate3d(81.25vw, -26vh, 0) scale(1.21, 0.82) rotate(4deg); opacity: 0.65; }
-        68% { transform: translate3d(43.75vw, 28vh, 0) scale(0.84, 1.19) rotate(11deg); opacity: 0.72; }
-        84% { transform: translate3d(-21.25vw, -14vh, 0) scale(1.11, 0.89) rotate(-3deg); opacity: 0.63; }
+        0%,
+        100% {
+            transform: translate3d(0, 0, 0) scale(0.94, 1.06) rotate(5deg);
+            opacity: 0.72;
+        }
+        17% {
+            transform: translate3d(55vw, -22vh, 0) scale(1.19, 0.84)
+                rotate(-5deg);
+            opacity: 0.64;
+        }
+        34% {
+            transform: translate3d(28.75vw, -40vh, 0) scale(0.82, 1.22)
+                rotate(-10deg);
+            opacity: 0.74;
+        }
+        51% {
+            transform: translate3d(81.25vw, -26vh, 0) scale(1.21, 0.82)
+                rotate(4deg);
+            opacity: 0.65;
+        }
+        68% {
+            transform: translate3d(43.75vw, 28vh, 0) scale(0.84, 1.19)
+                rotate(11deg);
+            opacity: 0.72;
+        }
+        84% {
+            transform: translate3d(-21.25vw, -14vh, 0) scale(1.11, 0.89)
+                rotate(-3deg);
+            opacity: 0.63;
+        }
     }
 }
 
@@ -1597,6 +1741,10 @@ body.menu-open {
         inset: 0 0 auto;
         height: 500px;
         background-image: url('../assets/hero/girl-palms.png');
+        background-image: image-set(
+            url('../assets/hero/girl-palms-mobile.webp') type('image/webp'),
+            url('../assets/hero/girl-palms.png') type('image/png')
+        );
         background-size: 460px auto;
         background-position: calc(50% - 18px) -10px;
     }
