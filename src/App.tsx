@@ -18,6 +18,12 @@ export default function App() {
             <main id='content'>
                 <Hero />
                 <div className='rates-zone'>
+                    <div className='rates-atmosphere' aria-hidden='true'>
+                        <span className='rates-blob rates-blob--pink-middle' />
+                        <span className='rates-blob rates-blob--blue-middle' />
+                        <span className='rates-blob rates-blob--pink-near' />
+                        <span className='rates-blob rates-blob--blue-near' />
+                    </div>
                     <CommissionPlans />
                     <LunarLevels />
                 </div>

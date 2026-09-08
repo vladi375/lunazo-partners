@@ -7,13 +7,24 @@ it('renders the landing page main region', () => {
     expect(screen.getByRole('main')).toHaveAttribute('id', 'content');
 });
 
+it('renders the decorative atmosphere as one hidden background system', () => {
+    const { container } = render(<App />);
+    const atmosphere = container.querySelector('.rates-atmosphere');
+
+    expect(atmosphere).toHaveAttribute('aria-hidden', 'true');
+    expect(atmosphere?.querySelectorAll('.rates-blob')).toHaveLength(4);
+});
+
 it('uses the exported Lunazo Partners logo in the header and footer', () => {
     render(<App />);
 
     const logos = screen.getAllByRole('img', { name: 'Lunazo Partners' });
     expect(logos).toHaveLength(2);
     for (const logo of logos) {
-        expect(logo).toHaveAttribute('src', expect.stringMatching(/Layer_1\.png$/));
+        expect(logo).toHaveAttribute(
+            'src',
+            expect.stringMatching(/Layer_1\.png$/),
+        );
     }
 });
 

@@ -14,7 +14,7 @@ describe('landing page content', () => {
             {
                 id: 'payouts',
                 question: 'How often are payouts?',
-                answer: 'Monthly, by the 20th in crypto, to the wallet linked to your account. Minimum payout is $50. Hold depends on your model.',
+                answer: 'Monthly, by the 20th in crypto, to the wallet linked to your account. \nMinimum payout is $50. Hold depends on your model.',
             },
             {
                 id: 'kyc',
@@ -24,7 +24,7 @@ describe('landing page content', () => {
             {
                 id: 'traffic',
                 question: 'What traffic is accepted?',
-                answer: 'Meta Ads, SEO, ASO, Influencers, PPC and UAC Branded and misleading traffic is not accepted — details in Terms.',
+                answer: 'Meta Ads, SEO, ASO, Influencers, PPC and UAC. Branded and misleading traffic is not accepted — details in Terms.',
             },
             {
                 id: 'levels',

@@ -120,7 +120,7 @@ export const faqItems = [
     {
         id: 'traffic',
         question: 'What traffic is accepted?',
-        answer: 'Meta Ads, SEO, ASO, Influencers, PPC and UAC Branded and misleading traffic is not accepted — details in Terms.',
+        answer: 'Meta Ads, SEO, ASO, Influencers, PPC and UAC. Branded and misleading traffic is not accepted — details in Terms.',
     },
     {
         id: 'levels',
