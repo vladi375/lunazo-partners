@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'Zalando Sans Expanded';
-    src: url('../assets/fonts/ZalandoSansExpanded-Variable.ttf')
-        format('truetype');
+    src: url('../assets/fonts/ZalandoSansExpanded-Latin.woff2')
+        format('woff2');
     font-style: normal;
     font-weight: 200 900;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/Inter-Variable.ttf') format('truetype');
+    src: url('../assets/fonts/Inter-Latin.woff2') format('woff2');
     font-style: normal;
     font-weight: 100 900;
-    font-display: swap;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../assets/fonts/Inter-Italic-Variable.ttf') format('truetype');
+    src: url('../assets/fonts/Inter-Italic-Latin.woff2') format('woff2');
     font-style: italic;
     font-weight: 100 900;
-    font-display: swap;
+    font-display: block;
 }
 
 :root {
