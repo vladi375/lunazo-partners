@@ -1,4 +1,5 @@
 import { URL } from '../data/content';
+import { withLandingQueryParams } from '../utils/withLandingQueryParams';
 
 export default function Hero() {
     return (
@@ -18,7 +19,10 @@ export default function Hero() {
                 <div className='hero-actions'>
                     <a
                         className='button button-primary'
-                        href={URL.AFFILIATE_REGISTRATION}
+                        href={withLandingQueryParams(
+                            URL.AFFILIATE_REGISTRATION,
+                            window.location.search,
+                        )}
                         target='_blank'
                         rel='noopener noreferrer'
                     >

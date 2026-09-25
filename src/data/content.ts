@@ -24,9 +24,9 @@ export const navItems = [
 
 export const URL = {
     AFFILIATE_REGISTRATION:
-        'https://affiliates.lunazopartners.com/registration?namespace=affiliate',
+        'https://affiliates.lunazopartners.com/registration',
     AFFILIATE_LOGIN:
-        'https://affiliates.lunazopartners.com/auth?namespace=affiliate',
+        'https://affiliates.lunazopartners.com/auth',
     TERMS: 'https://affiliates.lunazopartners.com/terms',
     PRIVACY: 'https://affiliates.lunazopartners.com/privacy-policy',
 };

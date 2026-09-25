@@ -1,5 +1,6 @@
 import brandLogo from '../assets/brand/Layer_1.png';
 import { URL } from '../data/content';
+import { withLandingQueryParams } from '../utils/withLandingQueryParams';
 
 export default function Closing() {
     return (
@@ -14,7 +15,10 @@ export default function Closing() {
                 </p>
                 <a
                     className='button button-primary'
-                    href={URL.AFFILIATE_REGISTRATION}
+                    href={withLandingQueryParams(
+                        URL.AFFILIATE_REGISTRATION,
+                        window.location.search,
+                    )}
                     target='_blank'
                     rel='noopener noreferrer'
                 >
@@ -27,14 +31,20 @@ export default function Closing() {
                 </span>
                 <nav aria-label='Legal'>
                     <a
-                        href={URL.TERMS}
+                        href={withLandingQueryParams(
+                            URL.TERMS,
+                            window.location.search,
+                        )}
                         target='_blank'
                         rel='noopener noreferrer'
                     >
                         Terms
                     </a>
                     <a
-                        href={URL.PRIVACY}
+                        href={withLandingQueryParams(
+                            URL.PRIVACY,
+                            window.location.search,
+                        )}
                         target='_blank'
                         rel='noopener noreferrer'
                     >
